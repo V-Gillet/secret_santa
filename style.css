@@ -1,27 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Mountains+of+Christmas:wght@700&display=swap");
+
+body {
+  background-image: url(assets/3162.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+.container-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.xmas-card {
+  width: 600px;
+  height: auto;
+  position: relative;
+  z-index: 5;
+}
+
+.xmas-card:hover {
+  transform: translate(80%, 90%);
+  animation-duration: 10s;
+}
+
+.absolute {
+  position: absolute;
+  width: 400px;
+  height: auto;
+  margin-inline-start: -500px;
+}
+
+.gif3 {
+  width: 600px;
+  height: auto;
+  margin-inline-start: -600px;
+}
+
+.fake-button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .fake-button {
   transition: ease-in-out, 1s;
   height: 100px;
-  width: auto;
+  width: 200px;
+  margin-top: 50px;
 }
 
 .fake-button:hover {
-  translate: 500px;
+  animation: nimp 1s ease-in-out alternate 0.4s infinite;
 }
 
 .fake-button2 {
   transition: ease-in-out, 1s;
   height: 100px;
-  width: auto;
+  width: 200px;
+  margin-inline: 30px;
+  margin-top: 50px;
 }
 
 .fake-button2:hover {
-  translate: 500px;
+  opacity: 0%;
 }
 
-.what {
-  transition: ease-in-out, 1s;
+.name-container {
+  display: flex;
+  justify-content: center;
+  color: #cc231e;
+  font-size: 2rem;
+  font-family: "Mountains of Christmas", cursive;
+  margin-top: 50px;
 }
 
-.what:hover {
-  transform: translate(0px, 600px);
+h1 {
+  position: absolute;
+  margin-top: 50px;
+}
+
+.name-cover {
+  position: relative;
+  width: 830px;
+}
+
+.name-cover:hover {
+  transform: translate(-90%);
+}
+
+@keyframes nimp {
+  0% {
+    transform: translate(-150px);
+  }
+  20% {
+    transform: translate(-500px);
+  }
+  40% {
+    transform: translate(-800px, -600px);
+    rotate: 30%;
+  }
+  80% {
+    transform: translate(-20px, -100px);
+    rotate: 57%;
+  }
+  100% {
+    transform: translate(-300px, -900px);
+    rotate: 20%;
+  }
 }

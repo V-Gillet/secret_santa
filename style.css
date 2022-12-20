@@ -1,0 +1,27 @@
+.fake-button {
+  transition: ease-in-out, 1s;
+  height: 100px;
+  width: auto;
+}
+
+.fake-button:hover {
+  translate: 500px;
+}
+
+.fake-button2 {
+  transition: ease-in-out, 1s;
+  height: 100px;
+  width: auto;
+}
+
+.fake-button2:hover {
+  translate: 500px;
+}
+
+.what {
+  transition: ease-in-out, 1s;
+}
+
+.what:hover {
+  transform: translate(0px, 600px);
+}
